@@ -1,0 +1,11 @@
+body {
+    background-image: url("old_mathematics.png");
+}
+
+#Questions {
+
+    justify-content: center;
+    background: #f5ccef;
+    height: 300px;
+    width: 33%;
+}
