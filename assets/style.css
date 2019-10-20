@@ -3,9 +3,28 @@ body {
 }
 
 #Questions {
+    position: absolute;
+    top: 40px;
+    left: 310px;
+    background: #eeddeb;
+    height: 350px;
+    width: 450px;
+    padding: 20px;
+    border-radius: 22px;
+}
 
+#c1, 
+#c2,
+#c3, 
+#c4 {
     justify-content: center;
-    background: #f5ccef;
-    height: 300px;
-    width: 33%;
+    position: relative;
+    top: 220px;
+    margin: 5px;
+}
+
+#highscore {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #f08585;
 }
