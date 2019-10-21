@@ -96,7 +96,7 @@ $(document).ready(function () {
 
     renderPage(questions[currentQuestion], currentQuestion);
 
-    // question compare answer, if correct/incorrect display correct message, if incorrect deduct the time penalty, time cannot be 0.
+    // question compare answer, if correct/incorrect display correct message, if incorrect deduct the time consequence
     $("#0").click(function (event) {
       event.preventDefault();
       if (questions[currentQuestion].answer == 0) {
@@ -160,3 +160,26 @@ $(document).ready(function () {
 
 
 }); 
+
+var counter = 0;
+var questIndex = 0;
+var seconds
+var timerInterval;
+
+function startTimer(){
+    clearInterval(timerInterval);
+    seconds = 0;
+    timerInterval = setInterval(function(){
+        console.log(seconds, timerInterval);
+        seconds++;
+        
+            if(questIndex > questions.length){
+                clearInterval(timerInterval);
+                questionText();
+            }
+        }
+    , 1000);
+    
+}
+function questionText() {
+    startTimer();
