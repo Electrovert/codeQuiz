@@ -1,32 +1,49 @@
 body {
     background-image: url("old_mathematics.png");
+    font-family: serif;
 }
 
-#Questions {
-    
-    position: absolute;
-    top: 60px;
-    left: 310px;
-    background: #eeddeb;
-    height: 350px;
-    width: 450px;
-    padding: 20px;
-    border-radius: 22px;
+.grid {
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: 2px solid slateblue;
 }
 
-#c1, 
-#c2,
-#c3, 
-#c4 {
-    display: none;
-    justify-content: center;
-    position: relative;
-    top: 220px;
-    margin: 5px;
+hr {
+    border: 2px solid darkslategray;
 }
 
-#highscore {
+.grid h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 2px;
+    color: black;
+    border-radius: 50px;
+}
+
+.grid #questions {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    color: black;
+}
+
+.buttons {
+    height: 40px;
+    padding: 30px;
+}
+
+#btn0, 
+#btn1, 
+#btn2, 
+#btn3 {
+    width: 250px;
     font-size: 20px;
-    text-decoration: underline;
-    color: #f08585;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
 }
+

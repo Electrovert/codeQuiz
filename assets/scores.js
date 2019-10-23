@@ -40,7 +40,7 @@ function endGame() {
 
 $(document).ready(function () {
 // click on start button, hide start button
-    $("#quizStart").click(function () {
+    $("#startQuiz").click(function () {
     $("#quizStart").hide();
     $("#instructions").text(instructions);
     // timer to countdown and display time left
