@@ -41,7 +41,7 @@ function endGame() {
 $(document).ready(function () {
 // click on start button, hide start button
     $("#startQuiz").click(function () {
-    $("#quizStart").hide();
+    $("#startQuiz").hide();
     $("#instructions").text(instructions);
     // timer to countdown and display time left
     quizTimer = setInterval(function () {
@@ -59,7 +59,7 @@ $(document).ready(function () {
     renderPage(questions[currentQuestion], currentQuestion);
 
 // Comparing the user's answer against the correct answer
-    $("#startQuiz").click(function (event) {
+    $("#0").click(function (event) {
       event.preventDefault();
       if (questions[currentQuestion].answer == 0) {
         $("#instructions").text(correct);
@@ -132,7 +132,22 @@ $(document).ready(function () {
   
       });
 
+  // Question 5
+  $("#5").click(function (event) {
+    event.preventDefault();
+    if (questions[currentQuestion].answer == 3) {
+      $("#instructions").text(correct);
+    }
+    else {
+      $("#instructions").text(incorrect);
+      timer = Math.max(timer - penalty, 0); 
+    }; 
+    currentQuestion++;
+    renderPage(questions[currentQuestion], currentQuestion);
+
   });
+
+});
 
 
 }); 
